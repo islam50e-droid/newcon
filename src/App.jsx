@@ -9,7 +9,7 @@ import {
 // ==========================================
 // 1. إعدادات النظام والذكاء الاصطناعي
 // ==========================================
-const apiKey = "AIzaSyAYaLlkQLbVwtBIyStYGHxKpYvmrx2OZ7s"; // سيتم توفيره من بيئة التشغيل تلقائياً
+const apiKey = import.meta.env.VITE_GEMINI_API_KEY; // يتم استخدامه من ملف .env بشكل آمن
 
 async function callGemini(prompt, systemInstruction = "") {
   let retries = 0;
